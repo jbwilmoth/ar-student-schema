@@ -19,7 +19,7 @@ class Student < ActiveRecord::Base
 
 
   def phone_number_must_be_valid
-    if self.phone.scan(/[0-9]/).size <10
+    if self.phone.scan(/[0-9]/).size <10 && (self.phone =~ /^[+\/\-() 0-9]+$/)
       errors.add(:phone, "number must have 10 digits")
     end
   end
