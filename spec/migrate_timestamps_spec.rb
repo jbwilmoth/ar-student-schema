@@ -1,7 +1,6 @@
 require 'rspec'
 require_relative '../db/config'
 
-
 describe "add timestamps" do
   it "should have the right columns and types" do
     found_created_at = found_updated_at = false

@@ -1,7 +1,6 @@
 require 'rspec'
 require_relative '../app/models/student'
 
-
 describe Student, "internationalized" do
 
   it "should have a name attribute" do

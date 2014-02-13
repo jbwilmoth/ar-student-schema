@@ -2,7 +2,6 @@ require 'rspec'
 require 'date'
 require_relative '../app/models/student'
 
-
 describe Student, "#name and #age" do
 
   before(:all) do
